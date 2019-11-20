@@ -1,0 +1,197 @@
+body {
+  width: 100vw;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 1em;
+  border: black solid 0.5rem;
+}
+h2 {
+  margin-left: 1rem;
+  font-size: 1em;
+  font-weight: bold;
+}
+.proj-descript {
+  margin-left: 1rem;
+
+}
+
+.btm-border {
+  box-sizing: border-box;
+  border-bottom: black solid 0.5rem;
+}
+.link {
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  font-size: 4em;
+  line-height: 0.9;
+  color: #9e9ba4;
+  display: inline-block;
+}
+
+.link--michaelb {
+  text-transform: uppercase;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 0.8;
+  color: #000000;
+}
+
+.link--michaelb:hover {
+  color: #88541181;
+}
+
+.link--michaelb::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  margin-top: -8px;
+  right: 0;
+  background: #f9f9f9;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.link--michaelb:hover::after {
+  transform: translate3d(100%, 0, 0);
+}
+
+.link--michaelb::before {
+  content: attr(data-letters);
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+  color: #b85959a4;
+  white-space: nowrap;
+  width: 0%;
+  transition: width 0.4s 0.3s;
+}
+
+.link--michaelb:hover::before {
+  width: 100%;
+}
+
+.center-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-screen {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.animated-pic {
+  width: 466px;
+  height: 900px;
+}
+
+.about-me-pic {
+  height: 100vh;
+  margin-left: 10rem;
+  float: right;
+}
+span {
+  font-weight: bold;
+}
+.about-section-text-segment {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.image-container {
+  position: relative;
+  height: 100vh;
+}
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 435px;
+  height: 560px;
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container .overlay h1 {
+  color: #fff;
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5rem;
+  padding-top: 5rem;
+  box-sizing: border-box;
+}
+
+.resume-link {
+  display: block;
+}
+
+.image-container:hover .overlay {
+  display: flex;
+  background: rgba(87, 79, 79, 0.466);
+}
+
+.LI-profile-badge {
+  display: block;
+}
+
+.box-shadow {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.footer :first-of-type {
+  height: 3rem;
+  padding-top: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.mySlides {
+  display: none;
+  float: right;
+  margin-right: 5rem;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 8.5s;
+  animation-name: fade;
+  animation-duration: 8.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
